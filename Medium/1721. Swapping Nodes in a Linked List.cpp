@@ -9,7 +9,7 @@ class Solution {
       ListNode() : val(0), next(nullptr) {}
       ListNode(int x) : val(x), next(nullptr) {}
       ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
+    };
 public:
     // This function counts the number of node in the linked list
     int numOfNode(ListNode* head) {
@@ -19,7 +19,7 @@ public:
     }
     // This function returns the head of the linked list after 
     // swapping the values of the kth node from the beginning and the kth node from the end 
-    ListNode* swapNodes(ListNode* head, int k) {
+    ListNode* swappingNodes(ListNode* head, int k) {
         ListNode* cur = head;   // current address
         ListNode* front = NULL; // address of kth node from the beginning
         ListNode* rear = NULL;  // address of kth node from the end 
