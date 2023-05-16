@@ -1,6 +1,9 @@
 {   
     // cpp
     "files.associations": {
-        "ios": "cpp"
+        "ios": "cpp",
+        "string": "cpp",
+        "bitset": "cpp",
+        "vector": "cpp"
     }
 }
