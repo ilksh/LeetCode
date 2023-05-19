@@ -5,6 +5,7 @@
         "string": "cpp",
         "bitset": "cpp",
         "vector": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "unordered_map": "cpp"
     }
 }
