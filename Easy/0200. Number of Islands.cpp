@@ -1,6 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+/*
+* Intuition
+* My code aims to find the number of islands in a grid.
+* An island is represented by a connected component of '1's in the grid. 
+* The code uses a BFS (Breadth-First Search) approach to explore the grid and count the number of islands.
+
+* Approach
+* The code iterates over each coordinate in the grid.
+* 1. When it encounters an unvisited land cell ('1') in the grid, it performs a BFS starting from that cell.
+* 2. During the BFS, it visits all the adjacent land cells and marks them as visited.
+* 3. This process continues until all connected land cells in the island have been visited.
+* 4. The code keeps track of the visited cells using the visited array
+     and increments the island count whenever a new island is encountered.
+
+* Complexity
+* Time complexity: O(row * col)
+* Space complexity: O((row + 1) * (col + 1))
+*/
+
 class Solution {
 private:
     typedef pair<int, int> pii; 
