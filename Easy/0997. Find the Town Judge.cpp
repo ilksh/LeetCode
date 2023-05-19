@@ -2,6 +2,27 @@
 
 using namespace std;
 
+/*
+ * 1. Intuition
+ * To find the judge in the town, we need to identify a person who is trusted by everyone else and does not trust anyone. 
+ * To determine this, we can calculate the in-degree and out-degree of each person. 
+ * The person with an in-degree of n - 1 (where n is the total number of people) 
+   and an out-degree of 0 would be the potential judge.
+
+ * 2. Approach
+ * The approach involves the following steps:
+ * a) Create two arrays: inDegree and outDegree, both initialized with 0s. 
+ *    The size of these arrays is n + 1 to accommodate indices from 1 to n.
+ * b) Iterate over the trust vector and update the in-degree and out-degree arrays accordingly.
+ * c) Finally, iterate over the arrays and check for a person who satisfies the conditions of
+ *    being trusted by everyone else (in-degree of n - 1) and not trusting anyone (out-degree of 0).
+ *    Return the index of such a person if found; otherwise, return -1.
+ 
+ * 3. Complexity 
+ * Time complexity: O(E), where E is the number of trust relationships given in the trust vector.
+ * Space complexity: O(N), where N is the total number of people in the town.
+ */
+
 class Solution {
 public:
     int findJudge(int n, vector<vector<int>>& trust) {
