@@ -6,6 +6,7 @@
         "bitset": "cpp",
         "vector": "cpp",
         "queue": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "deque": "cpp"
     }
 }
