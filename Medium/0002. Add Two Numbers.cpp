@@ -19,7 +19,7 @@ public:
         // Loop until both input lists and the carry value are null.
         while (true) {
             if (l1 == nullptr && l2 == nullptr && carry == 0) break;
-            int sum = carry; // Initialize
+            int sum = carry; // Start from the value that passed from the previous step
             
             // If l1 is not null, add its value and move l1 to the next node.
             if (l1 != nullptr) {
