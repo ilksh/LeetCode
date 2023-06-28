@@ -17,10 +17,10 @@ public:
    int sumOfLeftLeaves(TreeNode* root, bool left = false) {
     if (!root) return 0; 
     if (!root->left && !root->right) { // current node is at the edge
-        if (left) return root->val;
+        if (left) return root->val; // if it is on the left, add
         return 0;
     }
-
+    
     return sumOfLeftLeaves(root->left, true) + sumOfLeftLeaves(root->right, false);
     }   
 };
