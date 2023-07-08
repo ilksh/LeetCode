@@ -39,5 +39,4 @@ public:
         }
         return head;
     }
-
 };
