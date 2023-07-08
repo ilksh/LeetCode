@@ -10,13 +10,14 @@ public:
         if (n == 1) return stones[0];
 
         priority_queue<int> pq; 
-        for (auto e : stones) pq.push(e);
+        // move all elements to priority queue
+        for (auto e : stones) pq.push(e); 
+        
         
         while (pq.size() >= 2) {
-            int first = pq.top(); pq.pop();
+            int first = pq.top(); pq.pop(); 
             int second = pq.top(); pq.pop();
-            cout << first << "," << second << "\n";
-            int diff = second -first;
+            int diff = first - second;
             if (diff != 0) pq.push(diff);
         }
         int rst = pq.empty() ? 0 : pq.top();
