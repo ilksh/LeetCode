@@ -8,6 +8,8 @@
         "queue": "cpp",
         "unordered_map": "cpp",
         "deque": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "__hash_table": "cpp",
+        "iostream": "cpp"
     }
 }
