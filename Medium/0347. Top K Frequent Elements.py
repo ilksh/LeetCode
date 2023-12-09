@@ -16,4 +16,5 @@ class Solution:
             ans.append(sorted_list[idx][0])
             idx += 1
            
+        # return the answer
         return ans
