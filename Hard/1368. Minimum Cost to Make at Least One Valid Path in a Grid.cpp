@@ -51,6 +51,7 @@ private:
         if (dx == 0 && dy == 1 && val == 1) {
             return 0;
         }
+        
         if (dx == 0 && dy == -1 && val == 2) {
             return 0;
         }
