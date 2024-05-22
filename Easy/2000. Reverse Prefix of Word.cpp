@@ -13,7 +13,6 @@ public:
                 find = true;
                 break;
             }
-            
         }
         if (!find) return word;
         int cnt = 0;
