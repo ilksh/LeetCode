@@ -1,3 +1,5 @@
+from ast import List
+
 def isRoot(root, word):
     if len(root) > len(word):
         return False
