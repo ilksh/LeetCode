@@ -11,7 +11,8 @@ public:
         
         for (int i = 0; i < nums.size(); ++i) {
             cnt += max(0, need - nums[i]);
-            need = max(need, nums[i]) + 1;
+            // this approach can avoid integer overflow issue (INF + 1)
+            need = max(need, nums[i]) + 1; 
         }
         
         return cnt;
