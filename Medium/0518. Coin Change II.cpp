@@ -20,6 +20,6 @@ private:
 public:
     int change(int amount, vector<int>& coins) {
         memset(dp, -1, sizeof(dp)); 
-        return solve(amount, 0, coins); // index 0부터 시작
+        return solve(amount, 0, coins); 
     }
 };
